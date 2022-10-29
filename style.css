@@ -4,15 +4,18 @@
   color: #333;
   font-family: "Lato", sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header-img {
   width: 100%;
 }
+
 .header .info-link {
   font-family: "fantasy", cursive;
 }
@@ -24,29 +27,36 @@
   }
 
 }
+
 .main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
+
 .task-row-wrap {
   display: flex;
 }
+
 .task-list {
   margin: 0;
   padding: 0px;
 }
+
 .task-item, .section-title {
   list-style: none;
 }
+
 .input,.button{
   outline: none;
 }
+
 .button {
   background: none;
   border: 0px;
@@ -56,9 +66,11 @@
   font-family: "Lato", sans-serif;
   cursor: pointer;
 }
+
 .button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .section-title,
 .add-title {
@@ -70,6 +82,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .input[type="text"] {
   margin: 0;
   font-size: 18px;
@@ -82,6 +95,7 @@
   font-family: "Lato", sans-serif;
   color: #888;
 }
+
 .input[type="text"]:focus {
   color: #333;
 }
@@ -91,6 +105,7 @@
   display: block;
   margin: 0 0 20px;
 }
+
 .input#new-task {
   width: 318px;
 }
@@ -105,6 +120,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .task-item > * {
   vertical-align: middle;
 }
@@ -112,20 +128,24 @@
 .task-item > .input[type="checkbox"] {
   margin: 0 10px;
 }
+
 .task-item > .item-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .task-item >    .input[type="text"] {
   width: 226px;
 }
+
 .delete-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .delete-icon:hover {
   transform: rotateZ(0);
 }
