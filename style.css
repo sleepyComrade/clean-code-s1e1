@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.header-img {
+.header__img {
   width: 100%;
 }
 
-.header .info-link {
+.header__info-link {
   font-family: "fantasy", cursive;
 }
 
@@ -34,27 +34,28 @@
   margin: 0 auto 0;
 }
 
-.task {
+.todo-section__label_task,
+.todo-section__input_task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrap {
+.todo-section__row-wrap {
   display: flex;
 }
 
-.task-list {
+.todo-section__list {
   margin: 0;
   padding: 0px;
 }
 
-.task-item,
-.section-title {
+.todo-section__task-item,
+.todo-section__title {
   list-style: none;
 }
 
-.input,
+.todo-section__input,
 .button{
   outline: none;
 }
@@ -74,8 +75,7 @@
 }
 
 /* Heading */
-.section-title,
-.add-title {
+.todo-section__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,7 +85,7 @@
   text-transform: uppercase;
 }
 
-.input[type="text"] {
+.todo-section__input[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,22 +98,22 @@
   color: #888;
 }
 
-.input[type="text"]:focus {
+.todo-section__input[type="text"]:focus {
   color: #333;
 }
 
 /* New Task */
-.add-title {
+.todo-section__title_add-block {
   display: block;
   margin: 0 0 20px;
 }
 
-.input#new-task {
+.todo-section__input_new-task {
   width: 318px;
 }
 
 /* Task list */
-.task-item {
+.todo-section__task-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -123,51 +123,51 @@
   align-items: center;
 }
 
-.task-item {
+.todo-section__task-item {
   vertical-align: middle;
 }
 
-.task-item > .input[type="checkbox"] {
+.todo-section__task-item > .todo-section__input[type="checkbox"] {
   margin: 0 10px;
 }
 
-.task-item > .item-label {
+.todo-section__task-item > .todo-section__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task-item >    .input[type="text"] {
+.todo-section__task-item >    .todo-section__input[type="text"] {
   width: 226px;
 }
 
-.delete-icon {
+.button__delete-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete-icon:hover {
+.button__delete-icon:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.task-list#completed-tasks .item-label {
+.todo-section__list_completed .todo-section__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.task-item .input[type="text"] {
+.todo-section__task-item .todo-section__input[type="text"] {
   display: none;
 }
 
-.task-item.edit-mode .input[type="text"] {
+.todo-section__task-item_edit .todo-section__input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-.task-item.edit-mode .item-label {
+.todo-section__task-item_edit .todo-section__label {
   display: none;
 }
